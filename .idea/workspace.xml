@@ -1,33 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e90d555-6a4b-4462-89b7-3933d01e4006" name="Default Changelist" comment="First commit PHPStorm">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e90d555-6a4b-4462-89b7-3933d01e4006" name="Default Changelist" comment="squash! Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)">
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +42,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -226,6 +206,14 @@
       <workItem from="1604410839169" duration="2690000" />
       <workItem from="1604473138343" duration="4578000" />
     </task>
+    <task id="LOCAL-00001" summary="Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)">
+      <created>1604485806460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604485806460</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,23 +241,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="First commit PHPStorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit PHPStorm" />
+    <MESSAGE value="Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="397" key="#Composer" timestamp="1604410998443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="397" key="#Composer/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604410998443" />
-    <state x="197" y="21" key="CommitChangelistDialog2" timestamp="1604478658214">
+    <state x="197" y="21" key="CommitChangelistDialog2" timestamp="1604485984261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="197" y="21" key="CommitChangelistDialog2/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604478658214" />
+    <state x="197" y="21" key="CommitChangelistDialog2/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604485984261" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604478998803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -294,6 +284,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604479780922" />
+    <state x="807" y="428" key="VCS.ChangelistChooser" timestamp="1604485994133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="428" key="VCS.ChangelistChooser/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604485994133" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1604480375378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
