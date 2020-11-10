@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e90d555-6a4b-4462-89b7-3933d01e4006" name="Default Changelist" comment="squash! Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)">
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+    <list default="true" id="3e90d555-6a4b-4462-89b7-3933d01e4006" name="Default Changelist" comment="Added new fake inf in DB(BlogCategory, BlogPost, Users)">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/poligon.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/poligon.local.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +64,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,11 +205,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql_aurora" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel.domovoj.com.ua" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\poligon.local\app\Http\Controllers\Blog\Admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\poligon.local\app\Models" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -205,6 +241,11 @@
       <workItem from="1604403640826" duration="6830000" />
       <workItem from="1604410839169" duration="2690000" />
       <workItem from="1604473138343" duration="4578000" />
+      <workItem from="1604560063992" duration="12317000" />
+      <workItem from="1604647449713" duration="614000" />
+      <workItem from="1604663234868" duration="4726000" />
+      <workItem from="1604925779313" duration="917000" />
+      <workItem from="1605000684105" duration="6767000" />
     </task>
     <task id="LOCAL-00001" summary="Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)">
       <created>1604485806460</created>
@@ -213,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604485806460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added tables and connection in database">
+      <created>1604501715580</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604501715580</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added new fake inf in DB(BlogCategory, BlogPost, Users)">
+      <created>1604575170022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604575170022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,19 +279,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -249,21 +292,35 @@
     </ignored-roots>
     <MESSAGE value="First commit PHPStorm" />
     <MESSAGE value="Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new Migration in DB(BlogCategory, BlogPost), and added 2 models (Models/BlogCategory, BlogPost)" />
+    <MESSAGE value="Added tables and connection in database" />
+    <MESSAGE value="Added new fake inf in DB(BlogCategory, BlogPost, Users)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new fake inf in DB(BlogCategory, BlogPost, Users)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="397" key="#Composer" timestamp="1604410998443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="397" key="#Composer/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604410998443" />
-    <state x="197" y="21" key="CommitChangelistDialog2" timestamp="1604485984261">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604500335388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="197" y="21" key="CommitChangelistDialog2/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604485984261" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604478998803">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604500335388" />
+    <state x="729" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604499124104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604478998803" />
+    <state x="729" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604499124104" />
+    <state x="197" y="21" width="1494" height="998" key="CommitChangelistDialog2" timestamp="1604575169211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="197" y="21" width="1494" height="998" key="CommitChangelistDialog2/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604575169211" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1604499768608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604499768608" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1605008737624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1605008737624" />
     <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1604410823859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,17 +337,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604410823859" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1604479780922">
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1604675038317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604479780922" />
+    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604675038317" />
+    <state x="779" y="139" key="RollbackChangesDialog" timestamp="1604562013665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="779" y="139" key="RollbackChangesDialog/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604562013665" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1604569555865">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604569555865" />
     <state x="807" y="428" key="VCS.ChangelistChooser" timestamp="1604485994133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="428" key="VCS.ChangelistChooser/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604485994133" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1604480375378">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1604575227073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604480375378" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604575227073" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604567850666">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604567850666" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1604672390386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.3.1536.824@0.0.1920.1040" timestamp="1604672390386" />
   </component>
 </project>
