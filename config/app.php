@@ -179,6 +179,7 @@ return [
          *  Added Debugbar ...
          */
 
+        // Laravel IDE helper
         Barryvdh\Debugbar\ServiceProvider::class
     ],
 
