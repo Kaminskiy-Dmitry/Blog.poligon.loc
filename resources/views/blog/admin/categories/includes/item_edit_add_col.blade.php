@@ -5,7 +5,6 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                @method('PATH')
                 <button type="submit" class="btn btn-primary">Сохранить</button>
             </div>
         </div>
@@ -34,7 +33,7 @@
                     </div>
                     <div class="form-group">
                         <label for="title">Изменено</label>
-                        <input type="text" value="{{ $item->update_at }}" class="form-control" disabled>
+                        <input type="text" value="{{ $item->updated_at }}" class="form-control" disabled>
                     </div>
                     <div class="form-group">
                         <label for="title">Удалено</label>
