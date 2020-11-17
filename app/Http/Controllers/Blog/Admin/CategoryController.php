@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Blog\Admin;
 
+use App\Http\Requests\BlogCategoryUpdateRequest;
 use Illuminate\Http\Request;
 use App\Models\BlogCategory;
 
@@ -62,8 +63,17 @@ class CategoryController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BlogCategoryUpdateRequest $request, $id)
     {
+        /* Validation */
+
+        /*
+        $validatedData = $this->validate($request, $result);
+
+        $validatedData = $request->validate($result);
+
+         */
+
         $item = BlogCategory::find($id);//Найти елемент
         if(empty($item)){
             return back()
