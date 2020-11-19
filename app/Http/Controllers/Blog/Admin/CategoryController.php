@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Blog\Admin;
 
+use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
 use Illuminate\Http\Request;
 use App\Models\BlogCategory;
@@ -27,7 +28,11 @@ class CategoryController extends BaseController
      */
     public function create()
     {
-        dd(__METHOD__);
+        $item = new BlogCategory();
+        $categoryList = BlogCategory::all();
+
+        return view('blog.admin.categories.edit',
+        compact('item','categoryList'));
     }
 
     /**
@@ -36,9 +41,27 @@ class CategoryController extends BaseController
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BlogCategoryCreateRequest $request)
     {
-        dd(__METHOD__);
+        $data = $request->input();
+        if(empty($data['slug'])){
+            $data['slug'] = str_slug($data['title']);
+        }
+
+        //Создание объекта и добавления в дб
+//        $item = new BlogCategory($data);
+//        $item->save();
+
+        //Создание объекта и добавления в дб
+        $item = (new BlogCategory())->create($data);
+
+        if($item) {
+            return redirect()->route('blog.admin.categories.edit', [$item->id])
+                ->with((['success' => 'Успешно сохранено']));
+        } else {
+            return back()->withErrors(['msg'=> 'Ошибка сохранения'])
+                ->withInput();
+        }
     }
 
     /**
@@ -65,14 +88,6 @@ class CategoryController extends BaseController
      */
     public function update(BlogCategoryUpdateRequest $request, $id)
     {
-        /* Validation */
-
-        /*
-        $validatedData = $this->validate($request, $result);
-
-        $validatedData = $request->validate($result);
-
-         */
 
         $item = BlogCategory::find($id);//Найти елемент
         if(empty($item)){
@@ -82,9 +97,10 @@ class CategoryController extends BaseController
         }
 
         $data = $request->all();
-        $result = $item
-            ->fill($data)//перезаписывает данные
-            ->save();//Сохраняет изминения
+        if(empty($data['slug'])){
+            $data['slug'] = str_slug($data['title']);
+        }
+        $result = $item->update($data);//Перезаписывает и сохраняет данные
 
         if ($result){
             return redirect()

@@ -2,9 +2,15 @@
 
 @section('content')
     @php /** $var \App\Models\BlogCategory $item */ @endphp
-    <form action = "{{ route('blog.admin.categories.update', $item->id) }}" method = "POST">
-        @method('PATCH')
+
+    @if ($item->exists)
+        <form method="POST" action="{{ route('blog.admin.categories.update', $item->id) }}">
+            @method('PATCH')
+    @else
+        <form method="POST" action="{{ route('blog.admin.categories.store') }}">
+    @endif
         @csrf
+
         <div class="container">
             @php
                 /** @var \Illuminate\Support\ViewErrorBag $errors */
