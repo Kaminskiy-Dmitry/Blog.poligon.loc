@@ -28,4 +28,15 @@ class BlogCategoryRepository extends CoreRepository
     {
         return $this->startConditions()->find($id);
     }
+
+    /**
+     * Получить список категорийдля вывода в выпадающем списке.
+     *
+     * @return Collection
+     */
+
+    public function getForComboBox()
+    {
+        return $this->startConditions()->all();
+    }
 }
