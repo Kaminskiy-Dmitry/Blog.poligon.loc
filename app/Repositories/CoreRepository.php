@@ -24,10 +24,10 @@ abstract class CoreRepository
     protected $model;
 
     /**
-     *CoreRepository constructor
+     *CoreRepository construct
      */
 
-    public function __constructor()
+    public function __construct()
     {
         $this->model = app($this->getModelClass());
     }
@@ -38,7 +38,7 @@ abstract class CoreRepository
     abstract protected function getModelClass();
 
     /**
-     * @returns Model|mixed
+     * @return Model|mixed
      */
     protected function startConditions()
     {
