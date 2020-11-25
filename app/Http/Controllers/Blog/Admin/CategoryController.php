@@ -67,10 +67,6 @@ class CategoryController extends BaseController
         }
 
         //Создание объекта и добавления в дб
-//        $item = new BlogCategory($data);
-//        $item->save();
-
-        //Создание объекта и добавления в дб
         $item = (new BlogCategory())->create($data);
 
         if($item) {
@@ -88,20 +84,23 @@ class CategoryController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function edit($id, BlogCategoryRepository $categoryRepository)
+    public function edit($id)
     {
-//        $categoryRepository = new BlogCategory();
-//        $categoryRepository = app(BlogCategory::class);
+        /*
+        $categoryRepository = new BlogCategory();
+        $categoryRepository = app(BlogCategory::class);
 
-//        $item = BlogCategory::findOrFail($id);
-//        $categoryList = BlogCategory::all();
+        $item = BlogCategory::findOrFail($id);
+        $categoryList = BlogCategory::all();
 
-        $item = $categoryRepository->getEdit($id); // Получить запись по id
+        $item = $categoryRepository->getEdit($id);*/
+
+        $item = $this->blogCategoryRepository->getEdit($id);// Получить запись по id
         if(empty($item)){
             abort(404);
         }
 
-        $categoryList = $categoryRepository->getForComboBox();
+        $categoryList = $this->blogCategoryRepository->getForComboBox();
 
         return view('blog.admin.categories.edit',
             compact('item', 'categoryList'));
@@ -117,7 +116,8 @@ class CategoryController extends BaseController
     public function update(BlogCategoryUpdateRequest $request, $id)
     {
 
-        $item = BlogCategory::find($id);//Найти елемент
+        $item = $this->blogCategoryRepository->getEdit($id);//Найти елемент
+
         if(empty($item)){
             return back()
                 ->withErrors(['msg' => "Запись id=[{$id}]не найдена"])//При null вывести ошибку
