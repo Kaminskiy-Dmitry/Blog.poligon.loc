@@ -7,9 +7,18 @@ use App\Http\Controllers\Blog\BaseController as GuestBaseController;
 abstract class BaseController extends GuestBaseController
 {
     /**
-     * BaseController constructor
+     * Базовый контроллер для всех контроллеров управления
+     * блогом в панели администрирования.
+     *
+     * Должен быть родителем всех контроллеров управления блогом.
+     *
+     * @package App\Http\Controllers\Blog\Admin
      */
-    public function __construct(){
 
+    /**
+     * Base Controller
+    */
+    public function __construct(){
+        //Инициализация общих параметров
     }
 }
