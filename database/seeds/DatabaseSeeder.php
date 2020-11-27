@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         $this->call(UsersTableSeeder::class);
-        $this->call(BlogCaregoriesTableSeeder::class);
+        $this->call(BlogCategoriesTableSeeder::class);
         factory(\App\Models\BlogPost::class, 100)->create();
     }
 }

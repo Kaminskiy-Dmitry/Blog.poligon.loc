@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class BlogCaregoriesTableSeeder extends Seeder
+class BlogCategoriesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
